@@ -18,10 +18,10 @@
 - [x] 明确技术路线：Next.js + NestJS + Monorepo（分阶段落地）
 - [x] 完成《需求文档》与《公司背景文档》
 - [x] 完成《技术实现文档》
-- [ ] 初始化 Monorepo 项目结构（apps/web、apps/api、apps/admin、packages/*）
-- [ ] 完成官网核心页面静态开发（首页/产品/方案/关于/联系）
-- [ ] 完成多端适配（Mobile/Tablet/Desktop）
-- [ ] 完成基础 SEO（title、description、sitemap、robots、结构化数据）
+- [x] 初始化 Monorepo 项目结构（apps/web、apps/api、apps/admin、packages/*）
+- [x] 完成官网核心页面静态开发（首页/产品/方案/关于/联系）
+- [x] 完成多端适配（Mobile/Tablet/Desktop）
+- [x] 完成基础 SEO（title、description、sitemap、robots、结构化数据）
 - [ ] 部署前端到 Cloudflare 并完成上线验收
 
 ### V2 动态化升级（后续阶段）
@@ -35,10 +35,12 @@
 ## 里程碑记录（大功能提交时维护）
 
 - 2026-04-07：完成官网文档基线（需求文档、公司背景文档、技术实现文档、skill 规则、plan 计划）
+- 2026-04-07：完成 V1 静态官网首版开发（页面、样式系统、SEO、Monorepo工程骨架、构建验证）
+- 2026-04-07：完成仓库治理与交付准备（.gitignore、README、质量校验、GitHub 推送）
 
 ## 文档联动检查清单（每次修改后执行）
 
-- [ ] 《docs/需求文档.md》是否与最新需求一致
-- [ ] 《docs/技术实现文档.md》是否与当前实现路径一致
-- [ ] 《docs/公司背景文档.md》是否与品牌与主体信息一致
-- [ ] 本文档《plan.md》是否已更新任务状态与里程碑
+- [x] 《docs/需求文档.md》是否与最新需求一致
+- [x] 《docs/技术实现文档.md》是否与当前实现路径一致
+- [x] 《docs/公司背景文档.md》是否与品牌与主体信息一致
+- [x] 本文档《plan.md》是否已更新任务状态与里程碑

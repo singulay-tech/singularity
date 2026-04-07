@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+.vscode
+node_modules
+.turbo
+apps/web/.next
+apps/web/out
+apps/web/node_modules
+apps/web/.turbo
+apps/web/tsconfig.tsbuildinfo
+*.log
+.env
+.env.local
+.env.*.local
