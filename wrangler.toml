@@ -1,0 +1,4 @@
+name = "singularity"
+compatibility_date = "2026-04-07"
+pages_build_output_dir = "apps/web/out"
+compatibility_flags = ["nodejs_compat"]

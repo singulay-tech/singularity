@@ -47,6 +47,26 @@ pnpm build
 - Build output directory：`apps/web/out`
 - Node 版本建议：20+
 - 包管理器：pnpm
+- Framework preset：`None`
+
+## Cloudflare 报错修复（nodejs_compat）
+
+若访问线上域名出现：
+`no nodejs_compat compatibility flag set`
+
+按以下顺序处理：
+
+1. 进入 Cloudflare Pages 项目设置，确认构建配置：
+   - Build command：`pnpm build`
+   - Build output directory：`apps/web/out`
+   - Framework preset：`None`
+2. 在 `Functions -> Compatibility flags` 中，为 Production 和 Preview 同时添加：
+   - `nodejs_compat`
+3. 重新触发部署
+
+仓库内已提供 `wrangler.toml`，用于统一 Pages 输出目录与兼容标记：
+- `pages_build_output_dir = "apps/web/out"`
+- `compatibility_flags = ["nodejs_compat"]`
 
 ## 文档索引
 

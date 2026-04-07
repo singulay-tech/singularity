@@ -6,7 +6,7 @@ import { site } from "@/lib/site-data";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.singularity-edu.com"),
+  metadataBase: new URL("https://www.singulay.online"),
   title: {
     default: `${site.name} | AI创造力教育科技`,
     template: `%s | ${site.name}`,

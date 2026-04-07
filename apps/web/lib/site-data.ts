@@ -11,7 +11,7 @@ export const site = {
     "AI教育科技",
     "NovaCore Studio",
   ],
-  contactEmail: "biz@singularity-edu.com",
+  contactEmail: "singularity@singularitypowered.com",
 };
 
 export const navItems = [

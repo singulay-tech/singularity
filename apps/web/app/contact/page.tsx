@@ -31,7 +31,7 @@ export default function ContactPage() {
                 <li key={field}>{field}</li>
               ))}
             </ul>
-            <p>商务邮箱：biz@singularity-edu.com</p>
+            <p>商务邮箱：singularity@singularitypowered.com</p>
           </article>
         </div>
       </div>
