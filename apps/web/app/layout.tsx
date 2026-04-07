@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.singulay.online"),
   title: {
-    default: `${site.name} | AI创造力教育科技`,
+    default: `${site.name} | AI Agent 产品与工作流`,
     template: `%s | ${site.name}`,
   },
   description: site.description,

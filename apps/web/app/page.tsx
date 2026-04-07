@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { productGroups, site, solutionPoints } from "@/lib/site-data";
+import {
+  featuredProducts,
+  productGroups,
+  site,
+  solutionPoints,
+} from "@/lib/site-data";
 
 export default function HomePage() {
   return (
@@ -8,15 +13,15 @@ export default function HomePage() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <p className="tag">AI驱动型创造力引擎</p>
+            <p className="tag">AI Agent 产品与工作流平台</p>
             <h1>{site.title}</h1>
             <p className="lead">{site.description}</p>
             <div className="actions">
               <Link className="btn btn-primary" href="/contact">
-                预约咨询
+                联系我们
               </Link>
               <Link className="btn btn-secondary" href="/products">
-                查看产品体系
+                浏览产品矩阵
               </Link>
             </div>
           </div>
@@ -28,11 +33,11 @@ export default function HomePage() {
               src="/logo.jpg"
               width={64}
             />
-            <h2>核心隐喻体系</h2>
+            <h2>核心价值路径</h2>
             <ul>
-              <li>星：激发每个孩子独特思维与原生灵感</li>
-              <li>界：构建可创造、可协作的数字创作空间</li>
-              <li>力：让学习成为可持续成长的创作循环</li>
+              <li>增强认知：让复杂信息快速变得可理解、可决策</li>
+              <li>放大行动：把重复任务转化为自动化与半自动化流程</li>
+              <li>沉淀能力：将成功实践封装为可复用 Agent 模块</li>
             </ul>
           </div>
         </div>
@@ -62,7 +67,7 @@ export default function HomePage() {
 
       <section className="section section-alt">
         <div className="container">
-          <h2>教育解决方案路径</h2>
+          <h2>Agent 价值落地路径</h2>
           <div className="timeline">
             {solutionPoints.map((point) => (
               <div className="timeline-item" key={point}>
@@ -74,6 +79,32 @@ export default function HomePage() {
             <Link className="btn btn-primary" href="/solutions">
               查看完整方案
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <h2>已上线产品</h2>
+          <p className="lead">
+            围绕创作、沟通与智能体配置三类高频场景，持续迭代面向全年龄段用户的产品体验。
+          </p>
+          <div className="grid cards-3">
+            {featuredProducts.map((product) => (
+              <article className="card product-card" key={product.name}>
+                <p className="eyebrow">{product.highlight}</p>
+                <h3>{product.name}</h3>
+                <p>{product.summary}</p>
+                <a
+                  className="card-link"
+                  href={product.url}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  访问产品
+                </a>
+              </article>
+            ))}
           </div>
         </div>
       </section>

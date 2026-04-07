@@ -11,17 +11,18 @@ export default function ContactPage() {
     <section className="section">
       <div className="container">
         <p className="tag">联系我们</p>
-        <h1>开启合作，激发孩子的创造力成长</h1>
+        <h1>开启合作，共建 AI Agent 产品能力</h1>
         <p className="lead">
-          当前为静态官网演示版本，已预留线索字段和提交结构，后续将在V2接入后端服务。
+          当前为静态官网版本，已预留沟通字段与提交结构，后续将在 V2
+          接入后端服务与后台管理。
         </p>
         <div className="grid two-col">
           <article className="card">
             <h2>合作咨询方向</h2>
             <ul>
-              <li>学校与机构课程合作</li>
-              <li>产品试用与项目共建</li>
-              <li>活动联动与品牌合作</li>
+              <li>产品共建与场景接入</li>
+              <li>Agent 配置与流程设计</li>
+              <li>团队协作与沟通提效落地</li>
             </ul>
           </article>
           <article className="card">
